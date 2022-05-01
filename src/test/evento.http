@@ -1,0 +1,19 @@
+GET http://localhost:3000/evento HTTP/1.1
+
+
+########
+
+POST http://localhost:3000/evento HTTP/1.1
+content-type: application/json
+
+{
+    "nome":"nome evento",
+    "data" :"10-10-2022",
+    "descriacao" :"descricao",
+    "palavraChave" : "teste",
+    "categoria" : "T.I",
+    "statusEvento" : true, 
+    "local" : "Positivo",
+    "docente" : "teste"
+
+}
