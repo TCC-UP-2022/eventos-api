@@ -8,7 +8,11 @@ const eventoSchema = new mongoose.Schema({
   categoria: { type: String, required: true } /**CATEGORIA**/,
   statusEvento: { type: Boolean, default: true },
   local: { type: String, required: true } /**LOCAL**/,
-  docente: { type: String, required: true } /**DOCENTE**/,
+  usuario: {
+    type: mongoose.Schema.Types.ObjectId,
+    ref: "usuario",
+    required: true,
+  } /**USUARIO DOCENTE**/,
 });
 
 const evento = mongoose.model("eventos", eventoSchema);

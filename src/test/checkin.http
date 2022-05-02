@@ -1,13 +1,14 @@
+########listarCheckin########
 GET http://localhost:3000/checkin HTTP/1.1
 
 
-########
+########novoCheckin########
 
 POST http://localhost:3000/checkin HTTP/1.1
 content-type: application/json
 
 {
-    "aluno": "nome",
-    "evento": "evento"
-    
+   "evento": {"_id": "627036eb2d8cdb11a3433e7a"},
+    "usuario":  {"_id": "627036a4762124ee351c6b08"}
+
 }

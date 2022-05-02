@@ -1,15 +1,34 @@
+########listarUsuario########
 GET http://localhost:3000/usuario HTTP/1.1
 
 
-########
+########novoUsuario########
 
 POST http://localhost:3000/usuario HTTP/1.1
 content-type: application/json
 
 {
-    "nome": "nome",
+    "nome": "aa",
+    "sobrenome": "sobrenome",
+    "email": "aa@a.com",
+    "senha": "12345678910" 
+
+}
+
+########listarUsuarioID########
+GET http://localhost:3000/usuario/62703133e306b169d8ac5f37 HTTP/1.1
+
+
+########atualizarUsuarioID########
+PUT http://localhost:3000/usuario/62703133e306b169d8ac5f37 HTTP/1.1
+content-type: application/json
+
+{
+    "nome": "aac",
     "sobrenome": "sobrenome",
     "email": "a@a.com",
     "senha": "12345678910" 
 
 }
+########excluirUsuarioID########
+DELETE http://localhost:3000/usuario/62703133e306b169d8ac5f37 HTTP/1.1

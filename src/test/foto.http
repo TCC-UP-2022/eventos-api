@@ -1,15 +1,23 @@
+########listarFoto########
 GET http://localhost:3000/foto HTTP/1.1
 
 
-########
+########novaFoto########
 
 POST http://localhost:3000/foto HTTP/1.1
 content-type: application/json
 
 {
     "nome": "nome",
-    "evento": "evento",
+    "evento": {"_id": "62703144e306b169d8ac5f39"},
     "foto": "urlfoto",
     "banner": false
 
 }
+
+########listarFotoID########
+GET http://localhost:3000/foto/62703184e306b169d8ac5f3f HTTP/1.1
+
+
+########excluirFotoID########
+DELETE  http://localhost:3000/foto/62703184e306b169d8ac5f3f HTTP/1.1

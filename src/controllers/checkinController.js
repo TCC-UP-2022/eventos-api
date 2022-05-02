@@ -1,7 +1,6 @@
 import checkin from "../models/Checkin.js";
 
 class checkinController {
-
   static novoCheckin = (req, res) => {
     let checkins = new checkin(req.body);
     checkins.save((err, checkin) => {

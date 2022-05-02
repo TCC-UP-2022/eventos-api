@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 
 const fotoSchema = new mongoose.Schema({
   nome: { type: String, required: true },
-  evento: { type: String, required: true } /**EVENTO**/,
+  evento: { type: mongoose.Schema.Types.ObjectId, ref: 'evento', required: true } /**EVENTO**/,
   foto: { type: String, required: true } /**url**/,
   banner: { type: Boolean, default: false}
 });

@@ -5,7 +5,8 @@ const router = express.Router();
 
 router
 
-    .get("/checkin", checkinController.listarCheckin)
-    .post ("/checkin", checkinController.novoCheckin)
+  .get("/checkin", checkinController.listarCheckin)
+  .post("/checkin", checkinController.novoCheckin);
+
 
 export default router;

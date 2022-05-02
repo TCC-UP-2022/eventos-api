@@ -1,19 +1,42 @@
+########listarEvento########
 GET http://localhost:3000/evento HTTP/1.1
 
 
-########
+########novoEvento########
 
 POST http://localhost:3000/evento HTTP/1.1
 content-type: application/json
 
 {
-    "nome":"nome evento",
+    "nome":"nome evento 2",
     "data" :"10-10-2022",
     "descriacao" :"descricao",
     "palavraChave" : "teste",
     "categoria" : "T.I",
     "statusEvento" : true, 
     "local" : "Positivo",
-    "docente" : "teste"
+    "usuario" : {"_id": "62703133e306b169d8ac5f37"}
 
 }
+
+########listarEventoID########
+GET http://localhost:3000/evento/627033362cb69844a9a5069c HTTP/1.1
+
+########atualizarEventoID########
+PUT http://localhost:3000/evento/627033362cb69844a9a5069c HTTP/1.1
+content-type: application/json
+
+{
+    "nome":"nome evento 2.2",
+    "data" :"10-10-2022",
+    "descriacao" :"descricao",
+    "palavraChave" : "teste",
+    "categoria" : "T.I",
+    "statusEvento" : true, 
+    "local" : "Positivo",
+    "usuario" : {"_id": "62703133e306b169d8ac5f37"}
+
+}
+
+########excluirEventoID########
+DELETE http://localhost:3000/evento/627033362cb69844a9a5069c HTTP/1.1

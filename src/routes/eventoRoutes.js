@@ -5,8 +5,11 @@ const router = express.Router();
 
 router
 
-    .get("/evento", eventoController.listarEvento)
-    .post("/evento", eventoController.novoEvento)
+  .get("/evento", eventoController.listarEvento)
+  .post("/evento", eventoController.novoEvento)
+  .get("/evento/:id", eventoController.listarEventoID)
+  .put("/evento/:id", eventoController.atualizarEventoID)
+  .delete("/evento/:id", eventoController.excluirEventoID);
 
 
 export default router;
