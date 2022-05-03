@@ -19,4 +19,4 @@ content-type: application/json
 }
 
 ########deletarEnderecoID########
-DELETE http://localhost:3000/endereco/62706f697cafcc93feb1ad60 HTTP/1.1
+DELETE http://localhost:3000/endereco/62706f7a7cafcc93feb1ad63 HTTP/1.1

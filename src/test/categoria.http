@@ -16,4 +16,4 @@ content-type: application/json
 }
 
 ########deletarCategoriaID########
-DELETE http://localhost:3000/categoria/62707bfa3c47703821328985 HTTP/1.1
+DELETE http://localhost:3000/categoria/62718c656ca3e951d594185e HTTP/1.1

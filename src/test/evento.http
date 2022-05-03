@@ -33,19 +33,19 @@ GET http://localhost:3000/eventoInativo HTTP/1.1
 
 ########excluirEventoID########
 
-DELETE http://localhost:3000/evento/627033362cb69844a9a5069c HTTP/1.1
+DELETE http://localhost:3000/evento/627061f6794cc56e8b02fe54 HTTP/1.1
 
 ########atualizarEventoID########
-PUT http://localhost:3000/evento/627036eb2d8cdb11a3433e7a HTTP/1.1
+PUT http://localhost:3000/evento/627061f6794cc56e8b02fe54 HTTP/1.1
 content-type: application/json
 
 {
-    "nome":"nome evento 2",
+    "nome":"nome evento 3",
     "data" :"10-10-2022",
     "descriacao" :"descricao",
     "palavraChave" : "teste",
     "categoria" : {"_id": "62707c143c4770382132898c"},
-    "statusEvento" : true, 
+    "statusEvento" : false, 
     "local" : {"_id": "62706f7a7cafcc93feb1ad63"},
     "usuario" : {"_id": "627036a4762124ee351c6b08"}
 
