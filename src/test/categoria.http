@@ -1,0 +1,19 @@
+########listarCategoria########
+GET http://localhost:3000/categoria HTTP/1.1
+
+########listarCategoriaID########
+GET http://localhost:3000/categoria/62707c143c4770382132898c HTTP/1.1
+
+########novaCategoria########
+
+POST http://localhost:3000/categoria HTTP/1.1
+content-type: application/json
+
+{
+  "nome": "T.I",
+  "descricao": "Tecnologia da Informação"
+
+}
+
+########deletarCategoriaID########
+DELETE http://localhost:3000/categoria/62707bfa3c47703821328985 HTTP/1.1

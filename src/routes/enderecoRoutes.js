@@ -5,8 +5,8 @@ const router = express.Router();
 
 router
 
-    .post("/endereco", enderecoController.novoEndereco)
-    .get("/endereco", enderecoController.listarEndereco);
-
+  .post("/endereco", enderecoController.novoEndereco)
+  .get("/endereco", enderecoController.listarEndereco)
+  .delete("/endereco/:id", enderecoController.deletarEnderecoID);
 
 export default router;

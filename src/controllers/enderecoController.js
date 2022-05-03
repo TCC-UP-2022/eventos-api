@@ -12,13 +12,17 @@ class enderecoController {
     });
   };
 
-  static listarEndereco = (req, res) =>{
-      endereco.find((err, endereco) => {
-          err ? res.status(400).send(err) : res.status(200).json(endereco);
-      })
+  static listarEndereco = (req, res) => {
+    endereco.find((err, endereco) => {
+      err ? res.status(400).send(err) : res.status(200).json(endereco);
+    });
   };
 
-
+  static deletarEnderecoID = (req, res) => {
+    endereco.findByIdAndRemove(req.params.id, (err, endereco) => {
+      err ? res.status(400).send(err) : res.status(200).json(endereco);
+    });
+  };
 };
 
 export default enderecoController;

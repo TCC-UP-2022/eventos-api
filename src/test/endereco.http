@@ -17,3 +17,6 @@ content-type: application/json
   "complemento": "vsdvsdv"
 
 }
+
+########deletarEnderecoID########
+DELETE http://localhost:3000/endereco/62706f697cafcc93feb1ad60 HTTP/1.1

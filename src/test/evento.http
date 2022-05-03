@@ -12,10 +12,10 @@ content-type: application/json
     "data" :"10-10-2022",
     "descriacao" :"descricao",
     "palavraChave" : "teste",
-    "categoria" : "T.I",
+    "categoria" : {"_id": "62707c143c4770382132898c"},
     "statusEvento" : true, 
-    "local" : "Positivo",
-    "usuario" : {"_id": "62703133e306b169d8ac5f37"}
+    "local" : {"_id": "62706f7a7cafcc93feb1ad63"},
+    "usuario" : {"_id": "627036a4762124ee351c6b08"}
 
 }
 
@@ -40,13 +40,13 @@ PUT http://localhost:3000/evento/627036eb2d8cdb11a3433e7a HTTP/1.1
 content-type: application/json
 
 {
-    "nome": "ccccc",
-    "data": "2022-10-10T03:00:00.000Z",
-    "descriacao": "descricao",
-    "palavraChave": "teste",
-    "categoria": "T.I",
-    "statusEvento": false,
-    "local": "Positivo",
-    "usuario" : {"_id": "62703133e306b169d8ac5f37"}
+    "nome":"nome evento 2",
+    "data" :"10-10-2022",
+    "descriacao" :"descricao",
+    "palavraChave" : "teste",
+    "categoria" : {"_id": "62707c143c4770382132898c"},
+    "statusEvento" : true, 
+    "local" : {"_id": "62706f7a7cafcc93feb1ad63"},
+    "usuario" : {"_id": "627036a4762124ee351c6b08"}
 
 }
