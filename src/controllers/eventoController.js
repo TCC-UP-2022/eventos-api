@@ -1,5 +1,6 @@
 import evento from "../models/Evento.js";
 
+
 class eventoController {
   static novoEvento = (req, res) => {
     let eventos = new evento(req.body);

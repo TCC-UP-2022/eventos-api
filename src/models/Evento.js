@@ -7,7 +7,7 @@ const eventoSchema = new mongoose.Schema({
   palavraChave: { type: String, required: true },
   categoria: { type: String, required: true } /**CATEGORIA**/,
   statusEvento: { type: Boolean, default: true },
-  local: { type: String, required: true } /**LOCAL**/,
+  local: { type: mongoose.Schema.Types.ObjectId, ref: "endereco", } /**LOCAL**/,
   usuario: {
     type: mongoose.Schema.Types.ObjectId,
     ref: "usuario",
