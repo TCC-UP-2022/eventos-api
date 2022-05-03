@@ -20,23 +20,33 @@ content-type: application/json
 }
 
 ########listarEventoID########
-GET http://localhost:3000/evento/627033362cb69844a9a5069c HTTP/1.1
+
+GET http://localhost:3000/evento/627061f6794cc56e8b02fe54 HTTP/1.1
+
+
+########ListarEventoAtivo########
+
+GET http://localhost:3000/eventoAtivo HTTP/1.1
+
+########listarEventoInativo########
+GET http://localhost:3000/eventoInativo HTTP/1.1
+
+########excluirEventoID########
+
+DELETE http://localhost:3000/evento/627033362cb69844a9a5069c HTTP/1.1
 
 ########atualizarEventoID########
-PUT http://localhost:3000/evento/627033362cb69844a9a5069c HTTP/1.1
+PUT http://localhost:3000/evento/627036eb2d8cdb11a3433e7a HTTP/1.1
 content-type: application/json
 
 {
-    "nome":"nome evento 2.2",
-    "data" :"10-10-2022",
-    "descriacao" :"descricao",
-    "palavraChave" : "teste",
-    "categoria" : "T.I",
-    "statusEvento" : true, 
-    "local" : "Positivo",
+    "nome": "ccccc",
+    "data": "2022-10-10T03:00:00.000Z",
+    "descriacao": "descricao",
+    "palavraChave": "teste",
+    "categoria": "T.I",
+    "statusEvento": false,
+    "local": "Positivo",
     "usuario" : {"_id": "62703133e306b169d8ac5f37"}
 
 }
-
-########excluirEventoID########
-DELETE http://localhost:3000/evento/627033362cb69844a9a5069c HTTP/1.1

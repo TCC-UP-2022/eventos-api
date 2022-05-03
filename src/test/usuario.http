@@ -20,11 +20,11 @@ GET http://localhost:3000/usuario/62703133e306b169d8ac5f37 HTTP/1.1
 
 
 ########atualizarUsuarioID########
-PUT http://localhost:3000/usuario/62703133e306b169d8ac5f37 HTTP/1.1
+PUT http://localhost:3000/usuario/627036a4762124ee351c6b08 HTTP/1.1
 content-type: application/json
 
 {
-    "nome": "aac",
+    "nome": "aab",
     "sobrenome": "sobrenome",
     "email": "a@a.com",
     "senha": "12345678910" 

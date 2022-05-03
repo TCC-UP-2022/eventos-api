@@ -8,6 +8,8 @@ router
   .get("/evento", eventoController.listarEvento)
   .post("/evento", eventoController.novoEvento)
   .get("/evento/:id", eventoController.listarEventoID)
+  .get("/eventoAtivo", eventoController.listarEventoAtivo)
+  .get("/eventoInativo", eventoController.listarEventoInativo)
   .put("/evento/:id", eventoController.atualizarEventoID)
   .delete("/evento/:id", eventoController.excluirEventoID);
 

@@ -18,6 +18,18 @@ class eventoController {
     });
   };
 
+  static listarEventoAtivo = (req, res) => {
+    evento.find({ statusEvento: true }, (err, evento) => {
+      err ? res.status(400).send(err) : res.status(200).json(evento);
+    });
+  };
+
+  static listarEventoInativo = (req, res) => {
+    evento.find({ statusEvento: false }, (err, evento) => {
+      err ? res.status(400).send(err) : res.status(200).json(evento);
+    });
+  };
+
   static listarEventoID = (req, res) => {
     const id = req.params.id;
     evento.findById(id, (err, evento) => {
