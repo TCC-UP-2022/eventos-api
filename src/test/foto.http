@@ -2,7 +2,7 @@
 GET http://localhost:3000/foto HTTP/1.1
 
 
-########novaFoto########
+########ATUALIZAR, NÃO SEI MANDAR FOTO POR AQUI, PELO POSTMAN VAI########
 
 POST http://localhost:3000/foto HTTP/1.1
 content-type: application/json

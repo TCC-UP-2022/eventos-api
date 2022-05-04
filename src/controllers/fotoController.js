@@ -1,6 +1,7 @@
 import foto from "../models/Foto.js";
 
 class fotoController {
+  /**  FUNCIONALIDADE ESTA NO ROUTES/FOTOROUTES.JS
   static novaFoto = (req, res) => {
     let fotos = new foto(req.body);
     fotos.save((err, foto) => {
@@ -13,7 +14,7 @@ class fotoController {
           });
     });
   };
-
+**/
   static listarFoto = (req, res) => {
     foto.find((err, foto) => {
       err

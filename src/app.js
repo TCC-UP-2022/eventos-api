@@ -1,4 +1,5 @@
 import express from "express";
+import morgan from "morgan";
 import db from "./config/dbConnect.js";
 import routes from "./routes/index.js";
 
@@ -12,6 +13,8 @@ db.once("open", () => {
 
 const app = express();
 app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
+app.use(morgan("dev"));
 routes(app);
 
 
