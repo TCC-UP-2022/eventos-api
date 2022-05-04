@@ -6,6 +6,7 @@ import checkin from "../routes/checkinRoutes.js";
 import endereco from "../routes/enderecoRoutes.js";
 import categoria from "../routes/categoriaRoutes.js";
 
+
 const routes = (app) => {
   app.route("/").get((req, res) => {
     res.status(200).send("Eventos API");
