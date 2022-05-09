@@ -6,6 +6,7 @@ const router = express.Router();
 router
 
   .get("/checkin", checkinController.listarCheckin)
+  .get("/checkin/:id", checkinController.contadorCheckinEventoID)
   .post("/checkin", checkinController.novoCheckin);
 
 

@@ -8,7 +8,7 @@ POST http://localhost:3000/checkin HTTP/1.1
 content-type: application/json
 
 {
-   "evento": {"_id": "627036eb2d8cdb11a3433e7a"},
+   "evento": {"_id": "627061f6794cc56e8b02fe54"},
     "usuario":  {"_id": "627036a4762124ee351c6b08"}
 
 }
