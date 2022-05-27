@@ -1,14 +1,18 @@
 ########listarCheckin########
 GET http://localhost:3000/checkin HTTP/1.1
+//Authorization: Bearer 
 
+########listarNumerosDeCheckin########
+GET http://localhost:3000/checkin/627061f6794cc56e8b02fe54 HTTP/1.1
 
 ########novoCheckin########
 
 POST http://localhost:3000/checkin HTTP/1.1
 content-type: application/json
+//Authorization: Bearer 
 
 {
    "evento": {"_id": "627061f6794cc56e8b02fe54"},
-    "usuario":  {"_id": "627036a4762124ee351c6b08"}
+    "usuario":  {"_id": "627abe965c71547556610470"}
 
 }

@@ -8,7 +8,7 @@ import categoria from "../routes/categoriaRoutes.js";
 
 const routes = (app) => {
   app.route("/").get((req, res) => {
-    res.status(200).send("Eventos API");
+    res.status(200).send({ message: "API Eventos" });
   });
   app.use(express.json(), usuario, evento, foto, checkin, endereco, categoria);
 };

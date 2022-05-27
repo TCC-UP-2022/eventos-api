@@ -22,6 +22,7 @@ class checkinController {
           })
         : res.status(200).json(checkin);
     });
+
   };
 
   static contadorCheckinEventoID = (req, res) => {

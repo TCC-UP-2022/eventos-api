@@ -2,7 +2,7 @@
 GET http://localhost:3000/foto HTTP/1.1
 
 
-########ATUALIZAR, NÃO SEI MANDAR FOTO POR AQUI, PELO POSTMAN VAI########
+########ATUALIZAR, NÃO SEI MANDAR FOTO POR AQUI. PELO POSTMAN VAI########
 
 POST http://localhost:3000/foto HTTP/1.1
 content-type: application/json
@@ -16,7 +16,7 @@ content-type: application/json
 }
 
 ########listarFotoID########
-GET http://localhost:3000/foto/62703b3a269bd4d15640af28 HTTP/1.1
+GET http://localhost:3000/foto/6271f917ebfa98cef82ee068 HTTP/1.1
 
 
 ########excluirFotoID########

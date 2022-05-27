@@ -1,6 +1,15 @@
 ########listarUsuario########
 GET http://localhost:3000/usuario HTTP/1.1
 
+####Autenticação########
+POST http://localhost:3000/auth HTTP/1.1
+content-type: application/json
+Authorization:
+
+{
+    "email":"lucas@lucas.com",
+    "senha":"123456789110"
+}
 
 ########novoUsuario########
 
@@ -8,19 +17,19 @@ POST http://localhost:3000/usuario HTTP/1.1
 content-type: application/json
 
 {
-    "nome": "aa",
+    "nome": "aaa",
     "sobrenome": "sobrenome",
-    "email": "aa@a.com",
-    "senha": "12345678910" 
+    "email":"lucaas@lucas.com",
+    "senha":"12345678910"
 
 }
 
 ########listarUsuarioID########
-GET http://localhost:3000/usuario/62703133e306b169d8ac5f37 HTTP/1.1
+GET http://localhost:3000/usuario/627abe965c71547556610470 HTTP/1.1
 
 
 ########atualizarUsuarioID########
-PUT http://localhost:3000/usuario/627036a4762124ee351c6b08 HTTP/1.1
+PUT http://localhost:3000/usuario/627abe965c71547556610470 HTTP/1.1
 content-type: application/json
 
 {
@@ -31,4 +40,4 @@ content-type: application/json
 
 }
 ########excluirUsuarioID########
-DELETE http://localhost:3000/usuario/62703133e306b169d8ac5f37 HTTP/1.1
+DELETE http://localhost:3000/usuario/627abe965c71547556610470 HTTP/1.1

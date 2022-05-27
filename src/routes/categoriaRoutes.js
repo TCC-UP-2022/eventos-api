@@ -1,7 +1,10 @@
 import express from "express";
 import checkinController from "../controllers/categoriaController.js";
+import authMiddlewares from "../middlewares/auth.js";
 
 const router = express.Router();
+
+//router.use(authMiddlewares);
 
 router
 

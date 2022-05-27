@@ -3,8 +3,11 @@ import fotoController from "../controllers/fotoController.js";
 import multer from "multer";
 import multerConfig from "../config/multer.js";
 import foto from "../models/Foto.js";
+import authMiddlewares from "../middlewares/auth.js";
 
 const router = express.Router();
+
+//router.use(authMiddlewares);
 
 router
 

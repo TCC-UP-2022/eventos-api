@@ -1,7 +1,6 @@
 ########listarEvento########
 GET http://localhost:3000/evento HTTP/1.1
-
-
+//Authorization: Bearer 
 ########novoEvento########
 
 POST http://localhost:3000/evento HTTP/1.1
@@ -21,7 +20,7 @@ content-type: application/json
 
 ########listarEventoID########
 
-GET http://localhost:3000/evento/627061f6794cc56e8b02fe54 HTTP/1.1
+GET http://localhost:3000/evento/627061f7794cc56e8b02fe56 HTTP/1.1
 
 
 ########ListarEventoAtivo########
@@ -36,7 +35,7 @@ GET http://localhost:3000/eventoInativo HTTP/1.1
 DELETE http://localhost:3000/evento/627061f6794cc56e8b02fe54 HTTP/1.1
 
 ########atualizarEventoID########
-PUT http://localhost:3000/evento/627061f6794cc56e8b02fe54 HTTP/1.1
+PUT http://localhost:3000/evento/627061f7794cc56e8b02fe56 HTTP/1.1
 content-type: application/json
 
 {
